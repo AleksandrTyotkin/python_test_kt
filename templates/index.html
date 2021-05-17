@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block body %}
+<h1>Тестовое задание в К Телеком</h1>
+	<div class="container">
+ 		<div class="row">
+ 			<div class="col-md-offset-3 col-md-6">
+ 				<div class="tab" role="tabpanel">
+ 					<div class="tab-content tabs">
+ 						<div role="tabpanel" class="tab-pane fade in active" id="Section1"> 
+
+ 							<form class="form-horizontal" id="form_action" method="POST" action="">
+
+ 		        				<div class="form-group">
+        							<label for="exampleFormControlTextarea1" class="form-label">Серийный номер</label>
+        							<input class="form-control" name="number_serial" id="number_serial" type="text" placeholder="NXXAAXZXaa" aria-label="">
+        						</div>
+
+
+								<div class="form-group">
+     								<label for="exampleInputEmail1" class="form-label">Тип оборудования</label>
+      								<select id="type_equipments" name="type_equipments" class="form-select">
+      									<option value="one">TP-Link TL-WR74</option>
+    									<option value="two">D-Link DIR-300</option>
+    									<option value="three">D-Link DIR-300 S</option>
+       								</select>
+   								</div>
+
+
+ 								<div class="form-group">
+									<button type="submit" id="submit_add" class="btn btn-default">Добавить</button>
+ 								</div> 
+
+  						</div>
+ 					</div>
+ 				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
